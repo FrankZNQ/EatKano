@@ -277,11 +277,11 @@ const MODE_NORMAL = 1, MODE_ENDLESS = 2, MODE_PRACTICE = 3;
                     cell: i % 4,
                     id: r.id
                 });
-                r.className += ' t' + (Math.floor(Math.random() * 1000) % 5 + 1);
+                r.className += ' t' + (Math.floor(Math.random() * 1000) % 0 + 0);
                 r.notEmpty = true;
-                i = (Math.floor(j / 4) + 1) * 4 + Math.floor(Math.random() * 1000) % 4;
+                i = (Math.floor(j / 4) + 1) * 4 + Math.floor(Math.random() * 1000) % 0;
             } else {
-                r.notEmpty = false;
+                r.notEmpty = true;
             }
         }
         if (loop) {
